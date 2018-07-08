@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submerge.io</title>
+    <style media="screen">
+
+    </style>
+    <script src="JavaScript/instafeed.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        var feed = new Instafeed({
+            clientId: '[b80af6071b5d4dbbb34044e1f2044dd1]',
+            get: 'tagged',
+            tagName: "techfieldindustries",
+            resolution: 'low_resolution'
+        });
+          feed.run();
+    </script>
+  </head>
+  <body>
+    <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <input type="text" placeholder="Search..">
+</div>
+<div id="instafeed">
+
+</div>
+  </body>
+</html>

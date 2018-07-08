@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Comming Soon!</title>
+<link rel="shortcut icon" type="image/x-icon" href="TFILogo.gif" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="Mystery.css">
+<style>
+  body,
+  h1 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%
+  }
+
+  .bgimg {
+    background-image: url('http://i.imgur.com/SP21Bpo.png');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  img {
+    opacity: .3;
+  }
+
+</style>
+
+<body>
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      <img src="TFILogo.gif" alt="TFILogo" width="150" height="150">
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p class="w3-large w3-center">
+        <style>
+          p {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 0px;
+          }
+
+          img {
+            opacity: 1;
+          }
+        </style>
+        <p id="demo"></p>
+        <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("March 18, 2018 09:10:00").getTime();
+
+          // Update the count down every 1 second
+          var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+              minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+        </script>
+      </p>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p class="w3-large w3-center">Watch out for Launch Calender Event!
+        <br><a href="https://discord.gg/N6tQs6a">Come talk and Celebrate the Launch</a>
+      </p>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p class="w3-large w3-center"><a href="webcal://p39-calendars.icloud.com/published/2/35txY7zYQQJL4lv4G3hYqBvRD_G6KhzTbRRX-f5ccH4ErqtW7Tu0q8hb3WnJ_QQUpIgbZW-5ptkFtcgr6Uvt9gz0GLWCxS9OA4mpYXmNQIw">Apple Calender</a>
+        <img src="apple.png" alt="apple logo" width="40" height="40"><br>
+        <a href="https://calendar.google.com/calendar?cid=Y2xhc3Nyb29tMTE0ODY5NjU2MjE1MzYzMTg1NzAyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">Google Calender</a>
+        <img src="google.png" alt="google logo" width="50" height="50"></p>
+
+    </div>
+  </div>
+</body>
+
+</html>
